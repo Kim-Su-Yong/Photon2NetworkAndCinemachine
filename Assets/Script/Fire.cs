@@ -19,6 +19,7 @@ public class Fire : MonoBehaviour
 
     void Update()
     {
+        if (MouseHover.mouseHover.isHover == true) return;
         if (pv.IsMine && IsMouseClick)
         {
             FireBullet();
